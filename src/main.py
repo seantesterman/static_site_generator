@@ -1,9 +1,8 @@
 from textnode import *
-print("hello world")
 
 def main():
-   object = TextNode("abc", ".doc", "www.abc.com")
-   print(object)
+   node = TextNode("abc", ".doc", "www.abc.com")
+   print(node)
 
 if __name__ == "__main__":
     main()
