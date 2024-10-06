@@ -1,3 +1,4 @@
+from htmlnode import *
 text_type_text = "text"
 text_type_bold = "bold"
 text_type_italic = "italic"
@@ -22,7 +23,7 @@ class TextNode():
         return f"TextNode({self.text}, {self.text_type}, {self.url})"
     
 
-def text_node_to_html(text_node):
+def text_node_to_html_node(text_node):
     if text_node.text_type == text_type_text:
         return LeafNode(None, text_node.text)
     if text_node.text_type == text_type_bold:
