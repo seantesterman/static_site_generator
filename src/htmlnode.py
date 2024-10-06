@@ -60,7 +60,5 @@ class ParentNode(HTMLNode):
         return f"ParentNode({self.tag}, children: {self.children}, {self.props})"
             
         
-    def text_node_to_html(text_node):
-        if text_node == text_type_text:
-            leaf = LeafNode(tag=None, value=text_node.text)
+
     
